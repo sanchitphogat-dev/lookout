@@ -1,20 +1,31 @@
 {
   "name": "lookout",
   "version": "1.0.0",
-  "description": "Lookout — Unified Cybersecurity Threat Detection Dashboard (Demo Prototype)",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "node --watch server/server.js",
-    "client": "npm --prefix client run dev",
-    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
-    "usb:watch": "npm --prefix server run usb:watch",
-    "audit:usb": "npm --prefix server run audit:usb"
-  },
-  "devDependencies": {
-    "concurrently": "^9.1.0"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "usb:watch": "node server/usbDaemon.js"
   },
   "dependencies": {
-    "@designcodeio/threeui": "^1.2.0"
+    "next": "^14.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.360.0",
+    "clsx": "^2.1.0",
+    "tailwind-merge": "^2.2.0",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/ws": "^8.5.10",
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.0"
   }
 }

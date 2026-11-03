@@ -1,6 +1,19 @@
+# Dependencies
 node_modules/
-uploads/
-.env
-*.db
+
+# Next.js build output
+.next/
+out/
+
+# Build artifacts
 dist/
 .vite/
+uploads/
+*.db
+
+# Environment files
+.env
+.env*.local
+
+# Vercel
+.vercel
