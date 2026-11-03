@@ -1,0 +1,20 @@
+[
+  ".exe",
+  ".bat",
+  ".cmd",
+  ".vbs",
+  ".vbe",
+  ".js",
+  ".jse",
+  ".wsf",
+  ".wsh",
+  ".ps1",
+  ".scr",
+  ".pif",
+  ".com",
+  ".hta",
+  ".cpl",
+  ".msi",
+  ".reg",
+  ".inf"
+]

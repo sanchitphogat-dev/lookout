@@ -1,0 +1,20 @@
+{
+  "name": "lookout",
+  "version": "1.0.0",
+  "description": "Lookout — Unified Cybersecurity Threat Detection Dashboard (Demo Prototype)",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node --watch server/server.js",
+    "client": "npm --prefix client run dev",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "usb:watch": "npm --prefix server run usb:watch",
+    "audit:usb": "npm --prefix server run audit:usb"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "dependencies": {
+    "@designcodeio/threeui": "^1.2.0"
+  }
+}

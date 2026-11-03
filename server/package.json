@@ -1,0 +1,24 @@
+{
+  "name": "lookout-server",
+  "version": "1.0.0",
+  "description": "Lookout backend server",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "usb:watch": "node usbDaemon.js",
+    "usb:fixture": "node createTestUsb.js",
+    "audit:usb": "node auditUsb.js",
+    "test:stress": "node qaStressTest.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "multer": "^1.4.5-lts.1",
+    "sql.js": "^1.11.0",
+    "uuid": "^10.0.0",
+    "ws": "^8.22.0"
+  }
+}
